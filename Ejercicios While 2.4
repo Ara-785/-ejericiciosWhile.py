@@ -1,0 +1,15 @@
+import random  
+
+# Inicializar la variable para contar los tiros  
+tiros = 0  
+
+# Simular tirar el dado hasta obtener un 6  
+while True:  
+    dado = random.randint(1, 6)  # Generar un número aleatorio entre 1 y 6  
+    tiros += 1  # Incrementar el contador de tiros  
+    print(f"Tiro {tiros}: {dado}")  # Mostrar el resultado del tiro  
+    if dado == 6:  
+        print("¡Obtuviste un 6!")  
+        break  # Salir del bucle si se obtiene un 6  
+
+print(f"Total de tiros: {tiros}")
