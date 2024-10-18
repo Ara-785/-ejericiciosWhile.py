@@ -1,0 +1,17 @@
+# Solicitar al usuario que ingrese una cadena  
+cadena = input("Ingresa una cadena: ")  
+
+# Inicializar un contador para las vocales  
+contador_vocales = 0  
+
+# Definir un conjunto de vocales (tanto minúsculas como mayúsculas)  
+vocales = 'aeiouAEIOU'  
+
+# Recorrer cada carácter en la cadena ingresada  
+for caracter in cadena:  
+    # Verificar si el carácter es una vocal  
+    if caracter in vocales:  
+        contador_vocales += 1  # Incrementar el contador si es una vocal  
+
+# Imprimir el total de vocales encontradas  
+print(f"El número de vocales en la cadena es: {contador_vocales}")
