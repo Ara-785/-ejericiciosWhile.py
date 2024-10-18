@@ -1,0 +1,13 @@
+# Solicitar al usuario que ingrese un número  
+numero = input("Ingresa un número: ")  
+
+# Inicializar la suma de los dígitos  
+suma_digitos = 0  
+
+# Sumar los dígitos del número ingresado  
+for digito in numero:  
+    if digito.isdigit():  # Verificar que el carácter es un dígito  
+        suma_digitos += int(digito)  # Convertir el carácter a entero y sumar  
+
+# Imprimir el resultado  
+print(f"La suma de los dígitos es: {suma_digitos}")
