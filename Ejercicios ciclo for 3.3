@@ -1,0 +1,12 @@
+# Dimensiones del tablero  
+dimensiones = 8  
+
+# Simular el tablero de ajedrez usando ASCII  
+for fila in range(dimensiones):  
+    for columna in range(dimensiones):  
+        # Alternar colores: una celda es blanca y la siguiente es negra  
+        if (fila + columna) % 2 == 0:  
+            print("[]", end=" ")  # Casilla blanca  
+        else:  
+            print("##", end=" ")  # Casilla negra  
+    print()  # Nueva línea al final de cada fila
