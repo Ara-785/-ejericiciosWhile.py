@@ -1,0 +1,20 @@
+# Definir la lista de caracteres  
+lista_caracteres = ['p', 'r', 'o', 'g', 'r', 'a', 'm', 'a', 'c', 'i', 'ó', 'n']  
+
+# Elemento a buscar  
+elemento_buscado = 'm'  
+
+# Inicializar una variable para indicar si el elemento fue encontrado  
+encontrado = False  
+
+# Usar un ciclo for para recorrer la lista  
+for caracter in lista_caracteres:  
+    if caracter == elemento_buscado:  
+        encontrado = True  
+        break  # Termina el bucle si se encuentra el elemento  
+
+# Imprimir el resultado  
+if encontrado:  
+    print(f"El elemento '{elemento_buscado}' fue encontrado en la lista.")  
+else:  
+    print(f"El elemento '{elemento_buscado}' no fue encontrado en la lista.")
